@@ -1,4 +1,4 @@
-<center><img src="preview.gif" alt="preview"></img></center>
+![preivew](preview.gif)
 
 # tsmatrix
 
