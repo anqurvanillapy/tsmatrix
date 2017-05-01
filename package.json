@@ -5,10 +5,11 @@
   "main": "main.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "tslint --project tsconfig.json --type-check",
-    "prebuild": "npm run lint",
+    "prebuild": "tslint --project tsconfig.json --type-check",
     "build": "tsc",
-    "watch": "npm-watch"
+    "clean": "rm -rf ./dist",
+    "watch": "npm-watch",
+    "release": "npm run build && uglifyjs ./dist/main.js -o ./dist/main.js"
   },
   "watch": {
     "build": {
@@ -37,6 +38,7 @@
     "npm-watch": "^0.1.8",
     "tslint": "^5.1.0",
     "tslint-config-standard": "^5.0.2",
-    "typescript": "^2.3.2"
+    "typescript": "^2.3.2",
+    "uglifyjs": "^2.4.10"
   }
 }
