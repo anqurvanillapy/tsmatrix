@@ -6,7 +6,8 @@
     // --alwaysStrict.
     "strict": true,
     "allowJs": true,
-    "checkJs": true,      // allows type checking in JS files
+    "checkJs": true,  // allows type checking in JS files
+    "removeComments": true,
     "module": "commonjs",
     "target": "es5"
   },

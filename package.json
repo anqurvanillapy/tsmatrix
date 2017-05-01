@@ -5,8 +5,16 @@
   "main": "main.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "tsc -w",
-    "build": "tsc"
+    "lint": "tslint --project tsconfig.json --type-check",
+    "prebuild": "npm run lint",
+    "build": "tsc",
+    "watch": "npm-watch"
+  },
+  "watch": {
+    "build": {
+      "patterns": ["src"],
+      "extensions": "ts"
+    }
   },
   "repository": {
     "type": "git",
@@ -24,8 +32,9 @@
   },
   "homepage": "https://github.com/anqurvanillapy/tsmatrix#readme",
   "devDependencies": {
+    "npm-watch": "^0.1.8",
     "tslint": "^5.1.0",
     "tslint-config-standard": "^5.0.2",
-    "typescript": "^2.3.1"
+    "typescript": "^2.3.2"
   }
 }
