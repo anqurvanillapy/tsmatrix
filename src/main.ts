@@ -11,7 +11,7 @@ let rows = Math.floor(c.height / fontSize)
 let drops: number[] = []
 let prev: string[] = [] // previous head symbol
 
-// Every column got 1 drop initially.
+// Random raindrop spawning.
 for (let x = 0; x < columns; ++x) {
   drops[x] = Math.floor(Math.random() * rows)
 }
@@ -29,10 +29,8 @@ let draw = () => {
 
   for (let i = 0; i < drops.length; ++i) {
     // Get a green symbol and a white symbol (as head).
-    let s = prev[i]
+    let s = prev[i] || getSymbol()
     let hs = getSymbol()
-
-    if (!s) s = getSymbol()
 
     ctx.fillStyle = '#0f0'  // green text
     ctx.fillText(s, i * fontSize, drops[i] * fontSize)
