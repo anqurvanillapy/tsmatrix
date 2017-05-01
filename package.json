@@ -1,8 +1,8 @@
 {
-  "name": "tsmatrix-webgl",
+  "name": "tsmatrix",
   "version": "0.1.0",
-  "description": "A cmatrix-like page for my learning WebGL basics",
-  "main": "./dist/main.js",
+  "description": "A cmatrix-like page for my learning TypeScript basics",
+  "main": "main.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "tsc -w",
@@ -10,20 +10,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anqurvanillapy/tsmatrix-webgl.git"
+    "url": "git+https://github.com/anqurvanillapy/tsmatrix.git"
   },
   "keywords": [
     "cmatrix",
-    "webgl",
+    "canvas",
     "ts"
   ],
   "author": "AnqurVanillapy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/anqurvanillapy/tsmatrix-webgl/issues"
+    "url": "https://github.com/anqurvanillapy/tsmatrix/issues"
   },
-  "homepage": "https://github.com/anqurvanillapy/tsmatrix-webgl#readme",
+  "homepage": "https://github.com/anqurvanillapy/tsmatrix#readme",
   "devDependencies": {
-    "typescript": "^2.2.2"
+    "tslint": "^5.1.0",
+    "tslint-config-standard": "^5.0.2",
+    "typescript": "^2.3.1"
   }
 }

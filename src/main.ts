@@ -1,8 +1,6 @@
-function sayhi (name: string) {
-  let person: string = name ? name : 'stranger'
-  return 'Hello, ' + person + '!'
-}
+const c = document.getElementById('c') as HTMLCanvasElement
+const ctx = c.getContext('2d')
 
-var user = 'anqur'
-
-document.body.innerHTML = sayhi(user)
+// Full screen canvas
+c.width = window.innerWidth
+c.height = window.innerHeight

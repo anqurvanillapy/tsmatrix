@@ -1,6 +1,6 @@
-# tsmatrix-webgl
+# tsmatrix
 
-A `cmatrix`-like page for my learning WebGL basics.
+A `cmatrix`-like page for my learning TypeScript basics.
 
 ## License
 

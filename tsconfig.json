@@ -2,7 +2,11 @@
   "compilerOptions": {
     "outDir": "./dist/",
     "sourceMap": true,
-    "noImplicitAny": true,
+    // --strict: --noImplicitAny, --strictNullChecks, --noImplicitThis,
+    // --alwaysStrict.
+    "strict": true,
+    "allowJs": true,
+    "checkJs": true,      // allows type checking in JS files
     "module": "commonjs",
     "target": "es5"
   },
