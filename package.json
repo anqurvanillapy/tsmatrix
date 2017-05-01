@@ -1,6 +1,6 @@
 {
   "name": "tsmatrix",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A cmatrix-like page for my learning TypeScript basics",
   "main": "main.ts",
   "scripts": {
@@ -12,7 +12,9 @@
   },
   "watch": {
     "build": {
-      "patterns": ["src"],
+      "patterns": [
+        "src"
+      ],
       "extensions": "ts"
     }
   },
